@@ -21,13 +21,6 @@ class completed_order:
     purchase_price: float
     counterparty: str
 
-    def __init__(self,party:str,order_type:str,order_amount:int,purchase_price:float,counterparty:str):
-        self.party=party
-        self.order_type=order_type
-        self.order_amount=order_amount
-        self.purchase_price=purchase_price
-        self.counterparty=counterparty
-
 #opens a prompt to select an appropriate CSV, imports the data and creates a list of Order class objects
 def data_import():
     raw_data, data =[],[]
